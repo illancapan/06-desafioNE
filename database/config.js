@@ -2,7 +2,8 @@ import pg from 'pg'
 import 'dotenv/config'
 
 const { Pool } = pg
-const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE } = process.env
+const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE, JWT_SECRET } =
+    process.env
 
 const config = {
     host: DB_HOST,
@@ -14,13 +15,18 @@ const config = {
 }
 
 export const pool = new Pool(config)
+export const JWT_SECRETA = JWT_SECRET
 
-try {
-    await pool.query('SELECT NOW()')
-    console.log('Conectado a la base de datos desde config🔥🔥')
-} catch (error) {
-    console.log(
-        'Error en la conexion a la base de datos desde config ❌',
-        error.message
-    )
+const conexionTest = async () => {
+    try {
+        await pool.query('SELECT NOW()')
+        console.log('Conectado a la base de datos desde config🔥🔥')
+    } catch (error) {
+        console.log(
+            'Error en la conexion a la base de datos desde config ❌',
+            error.message
+        )
+    }
 }
+
+conexionTest()
