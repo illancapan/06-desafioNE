@@ -20,27 +20,19 @@ Este proyecto es una API REST desarrollada con **Node.js** y **Express**, que ma
 1. Clona este repositorio:
 
    ```
-   bashCopiarEditargit clone [<URL_DEL_REPOSITORIO>](https://github.com/illancapan/api-rest-jwt)
+   git clone(https://github.com/illancapan/api-rest-jwt)
    cd 06-desafione
    ```
 
 2. Instala las dependencias:
 
    ```
-   bash
-   
-   
-   CopiarEditar
    npm install
    ```
 
 3. Para ejecutar las pruebas unitarias:
 
    ```
-   bash
-   
-   
-   CopiarEditar
    npm test
    ```
 
@@ -57,10 +49,6 @@ Se ha puesto especial énfasis en las **pruebas unitarias** para validar los sig
 Para ejecutar las pruebas unitarias, utiliza el siguiente comando:
 
 ```
-bash
-
-
-CopiarEditar
 npm test
 ```
 
