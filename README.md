@@ -20,7 +20,7 @@ Este proyecto es una API REST desarrollada con **Node.js** y **Express**, que ma
 1. Clona este repositorio:
 
    ```
-   bashCopiarEditargit clone <URL_DEL_REPOSITORIO>
+   bashCopiarEditargit clone [<URL_DEL_REPOSITORIO>](https://github.com/illancapan/api-rest-jwt)
    cd 06-desafione
    ```
 
